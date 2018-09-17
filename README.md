@@ -155,13 +155,16 @@ https://s3.amazonaws.com/browzine-adapters/primo/01COLSCHL_INST-BRZN.zip
 
 Customize the naming conventions for each type of search result - Journal/Article - by changing the wording in the quotes below:
 
-e.g. You can customize "View Issue Contents" to be a different phrase.
+e.g. You can customize "View Issue Contents" to be a different phrase or even turn a service off, fully.
 
 ```
 window.browzine = {
   api: "https://public-api.thirdiron.com/public/v1/libraries/XXX",
   apiKey: "ENTER API KEY",
+  coverImageReplacementEnabled: true,
+  journalBrowZineWebLinkEnabled: true,
   journalBrowZineWebLinkText: "View Journal Contents",
+  articleBrowZineWebLinkEnabled: true,
   articleBrowZineWebLinkText: "View Issue Contents",
   articlePDFDownloadLinkEnabled: true,
   articlePDFDownloadLinkText: "Download PDF",
